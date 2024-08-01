@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="C:\Users\vagiv\Downloads\project 4\CSS\login-stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Firebase UI CSS -->
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="C:\Users\vagiv\Downloads\project 4\Media\Logo.png" alt="Logo" class="logo">
+            <ul>
+                <a class="pactive" href="Home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="Medicines.html"><i class="fa fa-fw fa-user-md"></i> Medicines</a>
+                <a href="Illness.html"><i class="fa fa-fw fa-medkit"></i> Illness</a>
+                <a href="Medbits-Bot.html"><i class="fas fa-robot"></i> Medbits Bot</a>
+                <a href="Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <script type="module" src="./homepage.js"></script>
+
+    <h1>Welcome to the Homepage</h1>
+    <div>First Name: <span id="loggedUserFName"></span></div>
+    <div>Last Name: <span id="loggedUserLName"></span></div>
+    <div>Email: <span id="loggedUserEmail"></span></div>
+    <button id="logout">Logout</button>
+</body>
+</html>

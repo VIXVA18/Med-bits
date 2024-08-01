@@ -1,0 +1,272 @@
+header {
+  background-color: #2F3C7E;
+  padding: 1.5em;
+  text-align: center;
+}
+/* navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.logo {
+  width: 275px;
+  height: 50px;
+  margin-right: auto; 
+}
+
+ul {
+  font-family: "Inter Tight", sans-serif;
+  font-size : 22px ;
+  font-weight: 600;
+  font-style: italic;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; 
+  width: 50%; 
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:not(:last-child) { 
+  margin-right: 40px;
+}
+
+a {
+  color: #FBEAEB;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #FBEAEB; 
+  text-shadow: 0px 0px 5px #FBEAEB; 
+}
+
+
+li:hover {
+  transform: scale(1.1); 
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Body */
+
+body {
+  background-color :#FBEAEB
+}
+
+/* Slide show 1 */
+
+.slideshow-container {
+  position: relative;
+  background: #c0c4d8;
+  margin-top: 10px;
+  height: 300px;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #FBEAEB;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #2F3C7E;
+  color: #FBEAEB;
+}
+
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #2F3C7E;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #586297;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #FBEAEB;
+}
+
+.dot:hover {
+  background-color: #c0c4d8;
+}
+
+q { font-family: "Inter Tight", sans-serif;
+  font-size : 15px ;
+  font-weight: 600;
+  font-style: italic;
+  color:#2F3C7E
+}
+
+.quote-button {
+  font-family: "Inter Tight", sans-serif;
+  font-size : 15px ;
+  font-weight: 600;
+  font-style: italic;
+  background-color: #2F3C7E;
+  color: #FBEAEB;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin: 20px auto;
+}
+
+.quote-button:hover {
+  background-color: #FBEAEB;
+  color: #2F3C7E;
+}
+
+/* Video */
+
+.image-container {
+  width: 100%; 
+  height: 700px; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.video-below-slideshow {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  position: relative; 
+  z-index: 1; 
+}
+
+/* Footer */
+
+footer {
+  background-color: #2F3C7E;
+  color: #FBEAEB;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px; /* Add this line to add some space between the slideshow and footer */
+}
+
+footer .social-media {
+  margin-bottom: 20px;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+  color: #FBEAEB;
+  transition: color 0.2s ease;
+}
+
+footer .social-media a:hover {
+  color: #FBEAEB;
+}
+
+footer .social-media i {
+  font-size: 24px;
+}
+
+footer p {
+  font-family: "Inter Tight", sans-serif;
+  font-size : 15px ;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Slide show 2 */
+
+.banner-slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  background-size: cover; /* Add this line */
+  background-position: center; /* Add this line */
+}
+
+.banner-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.prev1, .next1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev1 {
+  left: 10px;
+}
+
+.next1 {
+  right: 10px;
+}
+
+
+

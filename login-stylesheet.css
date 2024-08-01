@@ -1,0 +1,259 @@
+header {
+    background-color: #2F3C7E;
+    padding: 1.5em;
+    text-align: center;
+  }
+  /* navigation bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* add margin to separate nav from menu bar */
+  }
+  
+  .logo {
+    width: 275px;
+    height: 50px;
+    margin-right: auto; 
+  }
+  
+  ul {
+    font-family: "Inter Tight", sans-serif;
+    font-size : 22px ;
+    font-weight: 600;
+    font-style: italic;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    width: 50%; 
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  li:not(:last-child) { 
+    margin-right: 40px;
+  }
+  
+  a {
+    color: #FBEAEB;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #FBEAEB; 
+    text-shadow: 0px 0px 5px #FBEAEB; 
+  }
+  
+  li:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Body */
+  
+  body {
+    background-color :#FBEAEB
+  }
+  
+  /* menu bar */
+  
+  .Menu-container {
+    display: flex; 
+    flex-direction: column; 
+    height: 600px; 
+    position: fixed; 
+    top: 148px; /* adjust top position */
+    left: 8px; 
+    width: 280px; 
+    background-color: #2F3C7E; 
+    padding: 20px; 
+    border-right: 1px solid #2F3C7E ; 
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter Tight", sans-serif;
+    font-size : 22px ;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .menu-bar li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .menu-bar a {
+    display: block;
+    padding: 10px;
+    color: #FBEAEB;
+    text-decoration: none;
+  }
+  
+  .menu-bar a.active {
+    background-color: #c0c4d8;
+    color: #2F3C7E;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+  }
+  
+  .menu-bar li {
+    display: block; /* make list items block elements */
+  }
+  
+  .menu-bar ul li + li {
+    margin-top: 10px; /* add margin between list items */
+  }
+  
+  .content-area {
+    display: none;
+  }
+  
+  .content-container {
+    height: 600px;
+    width: 1150px;
+    margin: 0px auto;
+    position: absolute;
+    top: 0px; 
+    margin-left: 310px;
+    padding: 20px;
+    background-color: #c0c4d8;
+  }
+  
+  .content-container h1 {
+    margin-top: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-size : 30px ;
+    font-weight: 600;
+    font-style: italic;
+    color: #2F3C7E;
+  }
+  
+  .content-container h2 {
+    margin-top: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-size : 25px ;
+    font-weight: 600;
+    font-style: italic;
+    color: #2F3C7E;
+  }
+  
+  .content-container p {
+    margin-bottom: 20px;
+    font-family: "Inter Tight", sans-serif;
+    font-size : 20px ;
+    font-weight: 600;
+    font-style: italic;
+    color: #6d76a4;
+  }
+  
+  .menu-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .menu-bar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  
+  #content-container {
+    overflow-y: auto;
+    max-height: 500px; /* adjust the height as needed */
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#firebaseui-container {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#sign-up-button, #login-button {
+    margin-top: 20px;
+}
+
+.container {
+    display: none;
+}
+.container.active {
+    display: block;
+}
